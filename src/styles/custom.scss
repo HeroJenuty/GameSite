@@ -1,0 +1,16 @@
+body {
+    background: url("../images/tenor.gif") no-repeat center center fixed;
+    background-size: cover;
+}
+
+.games-grid {
+    .game-grid-sizer {
+        width: 33.333333%
+    }
+    .game-grid-item {
+        width: 33.333333%
+    }
+    .game-item {
+        margin: 6px;
+    }
+}
