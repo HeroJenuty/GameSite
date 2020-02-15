@@ -31,7 +31,7 @@ class Game extends React.Component {
 
                 <div className="game-grid-item">
                     <div className="game-item">
-                        <h1>Cyberbots</h1>
+                        {/* <h1>Cyberbots</h1> */}
                         <Iframe src="https://www.retrogames.cc/embed/8189-cyberbots-fullmetal-madness-950424-euro.html"
                             width="100%"
                             height="600px"
@@ -40,16 +40,42 @@ class Game extends React.Component {
                             scrolling="no" />
                     </div>
                 </div>
-                <div className="game-grid-item">
+                <div className="game-grid-item game-grid-featured">
                     <div className="game-item">
-                        <h1>Super Mario World</h1>
+                        {/* <h1>Super Mario World</h1> */}
                         <Iframe src="https://www.retrogames.cc/embed/16847-super-mario-world-usa.html"
                             width="100%" height="600" frameborder="no" allowfullscreen="true"
                             webkitallowfullscreen="true" mozallowfullscreen="true"
                             scrolling="no" />
                     </div>
                 </div>
-                
+                <div className="game-grid-item">
+                    <div className="game-item">
+                        {/* <h1>Super Mario World</h1> */}
+                        <Iframe src="https://www.retrogames.cc/embed/16847-super-mario-world-usa.html"
+                            width="100%" height="600" frameborder="no" allowfullscreen="true"
+                            webkitallowfullscreen="true" mozallowfullscreen="true"
+                            scrolling="no" />
+                    </div>
+                </div>
+                <div className="game-grid-item game-grid-featured">
+                    <div className="game-item">
+                        {/* <h1>Super Mario World</h1> */}
+                        <Iframe src="https://www.retrogames.cc/embed/16847-super-mario-world-usa.html"
+                            width="100%" height="600" frameborder="no" allowfullscreen="true"
+                            webkitallowfullscreen="true" mozallowfullscreen="true"
+                            scrolling="no" />
+                    </div>
+                </div>
+                <div className="game-grid-item">
+                    <div className="game-item">
+                        {/* <h1>Super Mario World</h1> */}
+                        <Iframe src="https://www.retrogames.cc/embed/16847-super-mario-world-usa.html"
+                            width="100%" height="600" frameborder="no" allowfullscreen="true"
+                            webkitallowfullscreen="true" mozallowfullscreen="true"
+                            scrolling="no" />
+                    </div>
+                </div>
             </div>
            
         </div>

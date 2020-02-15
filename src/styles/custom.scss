@@ -5,10 +5,13 @@ body {
 
 .games-grid {
     .game-grid-sizer {
-        width: 33.333333%
+        width: 25%
     }
     .game-grid-item {
-        width: 33.333333%
+        width: 25%
+    }
+    .game-grid-featured {
+        width: 50%
     }
     .game-item {
         margin: 6px;
