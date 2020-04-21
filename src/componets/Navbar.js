@@ -37,6 +37,7 @@ const HeaderNavbar = (props) => {
                             >Games</NavLink>
                         </NavItem>
                     </Nav>
+                    <img src="https://fontmeme.com/permalink/200305/2a4c7ace6f854ee4dc881c094be7db12.png" alt=""/>
                 </Collapse>
             </div>
         </Navbar>
