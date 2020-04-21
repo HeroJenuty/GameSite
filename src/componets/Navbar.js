@@ -34,7 +34,15 @@ const HeaderNavbar = (props) => {
                                 exact
                                 to="game"
                                 activeClassName="active"
-                            >Games</NavLink>
+                            >Arcade Games</NavLink>
+                        </NavItem>
+                        <NavItem>
+                            <NavLink
+                                tag={RRNavLink}
+                                exact
+                                to="gamestore"
+                                activeClassName="active"
+                            >Game Store</NavLink>
                         </NavItem>
                     </Nav>
                     <img src="https://fontmeme.com/permalink/200305/2a4c7ace6f854ee4dc881c094be7db12.png" alt=""/>

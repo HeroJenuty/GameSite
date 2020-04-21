@@ -11,7 +11,8 @@ import { createStore, applyMiddleware } from "redux";
 import thunk from "redux-thunk";
 import Navbar from './componets/Navbar';
 import Home from './pages/Home';
-import Game from './pages/Game';
+import ArcadeGames from './pages/ArcadeGames';
+import GameStore from './pages/GameStore';
 
 const store = createStore(reducers, applyMiddleware(thunk));
 
@@ -41,7 +42,12 @@ function App() {
             </Route>
             <Route path="/game">
               <Layout>
-                <Game />
+                <ArcadeGames />
+              </Layout>
+            </Route>
+            <Route path="/gamestore" exact>
+              <Layout>
+                <GameStore />
               </Layout>
             </Route>
           </Switch>

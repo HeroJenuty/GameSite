@@ -1,8 +1,8 @@
 import React from 'react';
 import Isotope from 'isotope-layout';
-import {  Modal, ModalBody, ModalFooter } from 'reactstrap';
+import { Modal, ModalBody, ModalFooter } from 'reactstrap';
 
-class Game extends React.Component {
+class ArcadeGames extends React.Component {
     constructor(props) {
         super(props);
         this.isoRef = React.createRef();
@@ -52,25 +52,70 @@ class Game extends React.Component {
                     gameImage: "MvC.jpg",
                 },
                 {
-                    gameUrl: "https://www.retrogames.cc/embed/9123-marvel-vs-capcom-clash-of-super-heroes-980123-usa.html",
-                    gameName: "Cyberbots",
-                    gameImage: "cyberbots.jpg",
+                    gameUrl: "https://www.retrogames.cc/embed/9800-sengoku-3-sengoku-densho-2001.html",
+                    gameName: "Sengoku 3",
+                    gameImage: "sengoku_3.jpg",
                 },
                 {
-                    gameUrl: "https://www.retrogames.cc/embed/8189-cyberbots-fullmetal-madness-950424-euro.html",
-                    gameName: "Cyberbots",
-                    gameImage: "cyberbots.jpg",
+                    gameUrl: "https://www.retrogames.cc/embed/8070-captain-commando-bootleg-set-2-with-ym2151-%2B-2xmsm5205-911014-other-country-bootleg.html",
+                    gameName: "Captain Commando",
+                    gameImage: "capt_comando.jpg",
                 },
                 {
-                    gameUrl: "https://www.retrogames.cc/embed/8189-cyberbots-fullmetal-madness-950424-euro.html",
-                    gameName: "Cyberbots",
-                    gameImage: "cyberbots.jpg",
+                    gameUrl: "https://www.retrogames.cc/embed/7752-alien-vs-predator-940520-usa.html",
+                    gameName: "Alien vs Predator",
+                    gameImage: "AvP.jpg",
                 },
                 {
-                    gameUrl: "https://www.retrogames.cc/embed/8189-cyberbots-fullmetal-madness-950424-euro.html",
-                    gameName: "Cyberbots",
-                    gameImage: "cyberbots.jpg",
-                }
+                    gameUrl: "https://www.retrogames.cc/embed/34551-the-king-of-fighters-98-the-slugfest-king-of-figh.html",
+                    gameName: "King of Fighters 98",
+                    gameImage: "kof98.jpg",
+                },
+                {
+                    gameUrl: "https://www.retrogames.cc/embed/7829-armored-warriors-941024-usa.html",
+                    gameName: "Armored warriors",
+                    gameImage: "AW.jpg",
+                },
+                {
+                    gameUrl: "https://www.retrogames.cc/embed/9739-sangokushi-ii-921005-asia.html",
+                    gameName: "Sangokushi II",
+                    gameImage: "Sangokushi.jpg",
+                },
+                {
+                    gameUrl: "https://www.retrogames.cc/embed/9735-samurai-shodown-v-samurai-spirits-zero-ngm-2700.html",
+                    gameName: "Samurai Shodown V",
+                    gameImage: "SSV.png",
+                },
+                {
+                    gameUrl: "https://www.retrogames.cc/embed/8378-dungeons-dragons-shadow-over-mystara-960209-usa.html",
+                    gameName: "Dungeons & Dragons",
+                    gameImage: "D&D.jpg",
+                },
+                {
+                    gameUrl: "https://www.retrogames.cc/embed/29921-mortal-kombat-ii-world-hack-by-smoke-v0-70-mortal-kombat-ii-unlimited.html",
+                    gameName: "Mortal Kombat II",
+                    gameImage: "MK2.jpg",
+                },
+                // {
+                //     gameUrl: "https://www.retrogames.cc/embed/8189-cyberbots-fullmetal-madness-950424-euro.html",
+                //     gameName: "Cyberbots",
+                //     gameImage: "cyberbots.jpg",
+                // },
+                // {
+                //     gameUrl: "https://www.retrogames.cc/embed/8189-cyberbots-fullmetal-madness-950424-euro.html",
+                //     gameName: "Cyberbots",
+                //     gameImage: "cyberbots.jpg",
+                // },
+                // {
+                //     gameUrl: "https://www.retrogames.cc/embed/8189-cyberbots-fullmetal-madness-950424-euro.html",
+                //     gameName: "Cyberbots",
+                //     gameImage: "cyberbots.jpg",
+                // },
+                // {
+                //     gameUrl: "https://www.retrogames.cc/embed/8189-cyberbots-fullmetal-madness-950424-euro.html",
+                //     gameName: "Cyberbots",
+                //     gameImage: "cyberbots.jpg",
+                // },
 
             ]
         }
@@ -85,7 +130,7 @@ class Game extends React.Component {
                         percentPosition: true
                     })
                 })
-            },);
+            });
         } else if (this.state.isotope) {
             this.state.isotope.reloadItems()
         }
@@ -121,12 +166,12 @@ class Game extends React.Component {
                 <div className="game-grid-sizer"></div>
                 {this.getGameItems()}
             </div>
-            <Modal 
-            size="lg"
-            backdrop={ 'static' }
-            isOpen={this.state.modal} toggle={this.toggle}>
+            <Modal
+                size="lg"
+                backdrop={'static'}
+                isOpen={this.state.modal} toggle={this.toggle}>
                 <ModalBody>
-                    <div className="embed-responsive embed-responsive-1by1">
+                    <div className="embed-responsive embed-responsive-4by3">
                         <iframe src={this.state.activeGameUrl}></iframe>
                     </div>
                 </ModalBody>
@@ -139,4 +184,4 @@ class Game extends React.Component {
 }
 
 
-export default Game;
+export default ArcadeGames;
