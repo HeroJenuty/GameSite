@@ -2,10 +2,10 @@ import React, {Component} from "react";
 import {connect} from "react-redux";
 import {bindActionCreators} from "redux";
 import * as actions from "../redux/actions";
-import AddGame from '../components/AddGame';
+import AddGame from '../componets/AddGame';
 import Game from '../componets/games/Game';
 
-class Games extends Component {
+class GameStore extends Component {
 
     componentDidMount(){
         this.props.getGames('_id name description imageUrl price');
@@ -43,4 +43,4 @@ const mapStateToDispatch = dispatch => {
     }, dispatch)
 }
 
-export default connect(mapStateToProps, mapStateToDispatch)(Games);
+export default connect(mapStateToProps, mapStateToDispatch)(GameStore);
