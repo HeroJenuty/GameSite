@@ -32,7 +32,7 @@ const HeaderNavbar = (props) => {
                             <NavLink
                                 tag={RRNavLink}
                                 exact
-                                to="game"
+                                to="arcadegames"
                                 activeClassName="active"
                             >Arcade Games</NavLink>
                         </NavItem>

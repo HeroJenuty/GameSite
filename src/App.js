@@ -29,32 +29,49 @@ const Layout = props => {
   )
 }
 
+const routes =[
+  {
+    path: '/',
+    exact: true,
+    main: () => <Layout>
+      <Home />
+    </Layout>
+  },
+  {
+    path: '/arcadegames',
+    exact: false,
+    main: () => <Layout>
+      <ArcadeGames />
+    </Layout>
+  },
+  {
+    path: '/gamestore',
+    exact: false,
+    main: () => <Layout>
+      <GameStore />
+    </Layout>
+  }
+]
+
+const getRoutes = () => {
+  return routes.map((route, index) => {
+    return <Route
+      exact={route.exact}
+      key={index}
+      path={route.path}>
+      {route.main}
+    </Route>
+  })
+}
+
 function App() {
-  return (
-    <>
-      <Provider store={store}>
-        <Router>
-          <Switch>
-            <Route path="/" exact>
-              <Layout>
-                <Home />
-              </Layout>
-            </Route>
-            <Route path="/game">
-              <Layout>
-                <ArcadeGames />
-              </Layout>
-            </Route>
-            <Route path="/gamestore" exact>
-              <Layout>
-                <GameStore />
-              </Layout>
-            </Route>
-          </Switch>
-        </Router>
-      </Provider>
-    </>
-  );
+  return  <Provider store={store}>
+            <Router>
+              <Switch>
+                {getRoutes()}
+              </Switch>
+            </Router>
+          </Provider>
 }
 
 export default App;

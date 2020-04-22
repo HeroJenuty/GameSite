@@ -8,10 +8,11 @@ import Game from '../componets/games/Game';
 class GameStore extends Component {
 
     componentDidMount(){
-        this.props.getGames('_id name description imageUrl price');
+        this.props.getGames('_id name description imageURL price');
     }
     renderGames = () => {
       //TODO refactor to a functional component
+      this.props.getGames('_id name description imageURL price');
         const gamesList = this.props.games.map(game => {
             return <Game key={game._id} game={game}/>
         })

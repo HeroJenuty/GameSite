@@ -20,7 +20,7 @@ const Game = props => {
         dispatch(addGameToUser({
             _id: '5e91be2a9ba571056c85b42d',
             games: [gameToAdd],
-        }, '_id name description imageUrl price'));
+        }, '_id name description imageURL price'));
     }
 
     return <div className="col-md-4 mb-3">
