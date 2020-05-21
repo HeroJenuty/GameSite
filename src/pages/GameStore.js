@@ -12,6 +12,11 @@ class GameStore extends Component {
     }
     renderGames = () => {
       //TODO refactor to a functional component
+
+        if(!this.props.games){
+            return null;
+        }
+
       this.props.getGames('_id name description imageURL price');
         const gamesList = this.props.games.map(game => {
             return <Game key={game._id} game={game}/>

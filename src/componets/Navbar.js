@@ -32,6 +32,14 @@ const HeaderNavbar = (props) => {
                             <NavLink
                                 tag={RRNavLink}
                                 exact
+                                to="login"
+                                activeClassName="active"
+                            >Login</NavLink>
+                        </NavItem>
+                        <NavItem>
+                            <NavLink
+                                tag={RRNavLink}
+                                exact
                                 to="arcadegames"
                                 activeClassName="active"
                             >Arcade Games</NavLink>
@@ -51,5 +59,11 @@ const HeaderNavbar = (props) => {
         </Navbar>
     );
 }
+
+const mapStateToProps = state => {
+    return {
+        token: state.token,
+    }
+};
 
 export default HeaderNavbar;

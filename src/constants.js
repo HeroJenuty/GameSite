@@ -1,3 +1,3 @@
 export default {
-    graphQLURL: 'http://localhost:3001/graphql',
+    graphQLURL: 'https://game-site-project.herokuapp.com/graphql',
 };
