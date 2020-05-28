@@ -22,42 +22,42 @@ const AddGame = () => {
 
     return <form>
         <div className="form-group">
-            <label htmlFor="game-name">Име</label>
+            <label htmlFor="game-name">Title</label>
             <input type="text"
                 className="form-control"
                 onChange={e => setName(e.target.value)}
                 id="game-name" 
-                placeholder="Въведи име на игра"/>
+                placeholder="Add game title"/>
         </div>
             <div className="form-group">
-            <label htmlFor="description">Описание</label>
+            <label htmlFor="description">Description</label>
             <input 
                 type="text"
                 onChange={e => setDescription(e.target.value)}
                 className="form-control" 
                 id="description" 
-                placeholder="Въведи описание на игра"/>
+                placeholder="Enter game description"/>
         </div>
         <div className="form-group">
-            <label htmlFor="image">URL на картинката</label>
+            <label htmlFor="image">Image URL</label>
             <input 
                 type="text" 
                 className="form-control" 
                 onChange={e => setImageUrl(e.target.value)}
                 id="image"
-                placeholder="Въведи URL за картинка"/>
+                placeholder="Please add a Image URL"/>
             <img src={imageUrl} className="d-block img-fluid" alt=""/>
         </div>
         <div className="form-group">
-            <label htmlFor="price">Цена</label>
+            <label htmlFor="price">Price</label>
             <input 
                 type="text" 
                 className="form-control" 
                 onChange={e => setPrice(Number(e.target.value))}
                 id="price" 
-                placeholder="Въведи цена"/>
+                placeholder="Add a price"/>
         </div>
-        <button type="button" className="btn btn-primary" onClick={dispatchAddGame}>Запази</button>
+        <button type="button" className="price-button" onClick={dispatchAddGame}>Save</button>
     </form>
 }
 

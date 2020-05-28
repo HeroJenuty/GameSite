@@ -53,5 +53,39 @@ export default {
         return response;
     },
 
+    async addUser(variables){
+        debugger
+        const response = await graphQLClient.mutate({
+            mutation: gql `mutation($firstName: String!, $lastName: String!, $email: String!, $userType: String!, $password: String!){
+                addUser(firstName: $firstName, lastName: $lastName, email: $email, userType: $userType, password: $password)
+            }`,
+            variables
+        })
+        return response;
+    },
+
+    async login(variables){
+        const response = await graphQLClient.mutate({
+            mutation: gql `mutation($email: String!, $password: String!){
+                login(email: $email, password: $password)
+            }`,
+            variables
+        })
+        return response;
+    },
+
+    async currentUser(responseFields = "_id firstName lastName email userType games {name}"){
+        const response = await graphQLClient.query({
+            query: gql `
+                query {
+                    currentUser {
+                        ${responseFields}
+                    }
+                }
+            `
+        })
+        return response;
+    }
+
 }
 
