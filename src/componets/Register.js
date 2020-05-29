@@ -12,7 +12,7 @@ const Register = (props) => {
 
   return (
     <div className="d-flex align-items-center ml-2">
-      <Button color="success" onClick={toggle} className="btn-sm">{buttonLabel}</Button>
+      <Button type="button" onClick={toggle} className="user-button">{buttonLabel}</Button>
       <Modal isOpen={modal} toggle={toggle} >
         <ModalHeader toggle={toggle}>Register User</ModalHeader>
         <ModalBody>

@@ -8,16 +8,16 @@ const AddGame = () => {
 
     const [name, setName] = useState('');
     const [description, setDescription] = useState('');
-    const [imageUrl, setImageUrl] = useState('');
+    const [imageURL, setImageURL] = useState('');
     const [price, setPrice] = useState(0);
 
     const dispatchAddGame = () => {
         dispatch(addGame({
             name,
             description,
-            imageUrl,
+            imageURL,
             price
-        }, '_id name description imageUrl price'));
+        }, '_id name description imageURL price'));
     }
 
     return <form>
@@ -43,10 +43,10 @@ const AddGame = () => {
             <input 
                 type="text" 
                 className="form-control" 
-                onChange={e => setImageUrl(e.target.value)}
+                onChange={e => setImageURL(e.target.value)}
                 id="image"
                 placeholder="Please add a Image URL"/>
-            <img src={imageUrl} className="d-block img-fluid" alt=""/>
+            <img src={imageURL} className="d-block img-fluid" alt=""/>
         </div>
         <div className="form-group">
             <label htmlFor="price">Price</label>

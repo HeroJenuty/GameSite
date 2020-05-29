@@ -14,4 +14,5 @@ export default {
     SAVE_TOKEN: 'SAVE_TOKEN',
     SET_USER_LOADED: 'SET_USER_LOADED',
     SET_USER: 'SET_USER',
+    DELETE_TOKEN: 'DELETE_TOKEN',
 };

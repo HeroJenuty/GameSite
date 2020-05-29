@@ -11,7 +11,7 @@ import { NavLink as RRNavLink } from 'react-router-dom';
 
 import Register from '../componets/Register'
 import Login from '../componets/Login';
-import UserMenu from '../componets/Register';
+import UserMenu from '../componets/UserMenu';
 
 import { connect } from "react-redux";
 import { bindActionCreators } from "redux";
@@ -85,11 +85,10 @@ class HeaderNavbar extends Component {
                         {this.props.token !=='' ? (
                             <>
                             <UserMenu />
-                            <div>vlizam</div>
                             </>
                         ) : (
                                 <>
-                                    {/* <Register buttonLabel="Регистрирай се" /> */}
+                                    <Register buttonLabel="Регистрирай се" />
                                     <Login buttonLabel="Влез" />
                                 </>
                             )}

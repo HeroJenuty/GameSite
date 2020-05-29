@@ -1,4 +1,4 @@
-import {combineReducers} from "redux";
+import { combineReducers } from "redux";
 import types from "./action-types";
 
 function movies(state = [], action) {
@@ -30,7 +30,7 @@ function games(state = [], action) {
 }
 
 
-function favoriteMovies(state=[], action){
+function favoriteMovies(state = [], action) {
     switch (action.type) {
         case types.ADD_FAVORITE_MOVIE: {
             return [...state, action.payload];
@@ -47,7 +47,7 @@ function favoriteMovies(state=[], action){
 function error(state = {}, action) {
     switch (action.type) {
         case types.SET_ERROR: {
-            return {...action.payload};
+            return { ...action.payload };
         }
         default:
             return state;
@@ -66,7 +66,7 @@ function userLoaded(state = false, action) {
 function currentUser(state = {}, action) {
     switch (action.type) {
         case types.SET_USER: {
-            return {...action.payload};
+            return { ...action.payload };
         }
         default:
             return state;
@@ -79,8 +79,13 @@ function token(state = localStorage.getItem('token') ? localStorage.getItem('tok
             localStorage.setItem('token', action.payload);
             return action.payload
         }
+        case types.DELETE_TOKEN: {
+            localStorage.removeItem('token');
+            return action.payload
+        }
         default:
             return state;
+
     }
 }
 
@@ -111,7 +116,7 @@ function movieDatabaseMovies(state = [], action) {
 function movieDetails(state = {}, action) {
     switch (action.type) {
         case types.SET_MOVIE_DETAILS: {
-            return {...action.payload};
+            return { ...action.payload };
         }
 
         default:
@@ -143,9 +148,9 @@ function totalPages(state = 0, action) {
 export default combineReducers({
     movies,
     games,
-    favoriteMovies, 
-    error, 
-    movieDatabaseMovies, 
+    favoriteMovies,
+    error,
+    movieDatabaseMovies,
     movieDetails,
     currentPage,
     totalPages,

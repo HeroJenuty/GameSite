@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
-import {useDispatch} from 'react-redux';
-import {login} from '../redux/actions';
+import { useDispatch } from 'react-redux';
+import { login } from '../redux/actions';
 
 const RegisterForm = () => {
 
@@ -8,31 +8,32 @@ const RegisterForm = () => {
     const [email, setEmail] = useState('');
     const [password, setPassword] = useState('');
 
-    const dispatchLogin = () => {
-        dispatch(login({
+    const dispatchLogin = async () => {
+        await dispatch(login({
             email,
             password,
         }));
+        window.location = "/";
     }
 
     return <form>
         <div className="form-group">
             <label htmlFor="login-email">Email</label>
-            <input 
-                type="text" 
-                className="form-control" 
+            <input
+                type="text"
+                className="form-control"
                 onChange={e => setEmail(e.target.value)}
                 id="login-email"
-                placeholder="Въведи email"/>
+                placeholder="Въведи email" />
         </div>
         <div className="form-group">
             <label htmlFor="login-password">Парола</label>
-            <input 
-                type="password" 
-                className="form-control" 
+            <input
+                type="password"
+                className="form-control"
                 onChange={e => setPassword(e.target.value)}
-                id="login-password" 
-                placeholder="Въведи парола"/>
+                id="login-password"
+                placeholder="Въведи парола" />
         </div>
         <button type="button" className="btn btn-success" onClick={dispatchLogin}>Влез</button>
     </form>

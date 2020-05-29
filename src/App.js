@@ -14,6 +14,7 @@ import Home from './pages/Home';
 import Login from './pages/Login';
 import ArcadeGames from './pages/ArcadeGames';
 import GameStore from './pages/GameStore';
+import Profile from './pages/Profile';
 
 const store = createStore(reducers, applyMiddleware(thunk));
 
@@ -57,6 +58,13 @@ const routes =[
     exact: false,
     main: () => <Layout>
       <GameStore />
+    </Layout>
+  },
+  {
+    path: '/profile',
+    exact: false,
+    main: () => <Layout>
+      <Profile />
     </Layout>
   }
 ]
