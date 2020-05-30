@@ -11,7 +11,6 @@ import { createStore, applyMiddleware } from "redux";
 import thunk from "redux-thunk";
 import Navbar from './componets/Navbar';
 import Home from './pages/Home';
-import Login from './pages/Login';
 import ArcadeGames from './pages/ArcadeGames';
 import GameStore from './pages/GameStore';
 import Profile from './pages/Profile';
@@ -37,13 +36,6 @@ const routes =[
     exact: true,
     main: () => <Layout>
       <Home />
-    </Layout>
-  },
-  {
-    path: '/login',
-    exact: true,
-    main: () => <Layout>
-      <Login />
     </Layout>
   },
   {

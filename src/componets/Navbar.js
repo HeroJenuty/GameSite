@@ -50,22 +50,14 @@ class HeaderNavbar extends Component {
                                 activeClassName="active"
                             >Home</NavLink>
                         </NavItem>
-                        {/* <NavItem>
-                            <NavLink
-                                tag={RRNavLink}
-                                exact
-                                to="login"
-                                activeClassName="active"
-                            >Login</NavLink>
-                        </NavItem> */}
-                        {/* <NavItem>
+                        <NavItem>
                             <NavLink
                                 tag={RRNavLink}
                                 exact
                                 to="arcadegames"
                                 activeClassName="active"
                             >Arcade Games</NavLink>
-                        </NavItem> */}
+                        </NavItem>
                         {/* <NavItem>
                             <NavLink
                                 tag={RRNavLink}
