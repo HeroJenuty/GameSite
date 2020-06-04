@@ -11,15 +11,15 @@ const Register = (props) => {
   const toggle = () => setModal(!modal);
 
   return (
-    <div className="d-flex align-items-center ml-2">
-      <Button type="button" onClick={toggle} className="user-button">{buttonLabel}</Button>
+    <div className="register-modal d-flex align-items-center ml-2">
+      <Button type="button" onClick={toggle} className="register-button">{buttonLabel}</Button>
       <Modal isOpen={modal} toggle={toggle} >
         <ModalHeader toggle={toggle}>Register User</ModalHeader>
         <ModalBody>
             <RegisterForm/>
         </ModalBody>
         <ModalFooter>
-          За да използвате максимално услугите на този сайт трябва да сте регистриран потребител.
+          You must register in order to enter the Action House
         </ModalFooter>
       </Modal>
     </div>

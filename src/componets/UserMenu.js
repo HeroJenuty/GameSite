@@ -30,7 +30,7 @@ const UserMenu = () => {
                 activeClassName="active"
             >Game Store</NavLink>
         </NavItem>
-        <Button type="button" onClick={dispatchLogout} className="user-button">Logout</Button>
+        <Button type="button" onClick={dispatchLogout} className="logout-button">Logout</Button>
     </>
 
 

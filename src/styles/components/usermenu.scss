@@ -1,0 +1,26 @@
+.logout-button {
+	box-shadow: 3px 4px 0px 0px #899599;
+	background:linear-gradient(to bottom, #ededed 5%, #bab1ba 100%);
+	background-color:#ededed;
+	border-radius:15px;
+	border:1px solid #d6bcd6;
+	display:inline-block;
+	cursor:pointer;
+	color:#c90909;
+	font-family:Arial;
+	font-size:17px;
+	height: 45px;
+	text-decoration:none;
+    text-shadow:0px 1px 0px #e1e2ed;
+	font-weight: bold;
+	margin-top: 5px;
+	margin-left: 10px;
+}
+.logout-button:hover {
+	background:linear-gradient(to bottom, #f88d2a 5%, #794204 100%);
+	background-color:#b9bab1;
+}
+.logout-button:active {
+	position:relative;
+	top:1px;
+}

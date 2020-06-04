@@ -1,0 +1,137 @@
+//Register button
+
+.register-button {
+	box-shadow: 3px 4px 0px 0px #899599;
+	background:linear-gradient(to bottom, #ededed 5%, #bab1ba 100%);
+	background-color:#ededed;
+	border-radius:15px;
+	border:1px solid #d6bcd6;
+	display:inline-block;
+	cursor:pointer;
+	color:#c90909;
+	font-family:Arial;
+	font-size:17px;
+	padding:7px 25px;
+	text-decoration:none;
+    text-shadow:0px 1px 0px #e1e2ed;
+    font-weight: bold;
+}
+.register-button:hover {
+	background:linear-gradient(to bottom, #f88d2a 5%, #794204 100%);
+	background-color:#b9bab1;
+}
+.register-button:active {
+	position:relative;
+	top:1px;
+}
+
+//Login button
+
+
+.login-button {
+	box-shadow: 3px 4px 0px 0px #899599;
+	background:linear-gradient(to bottom, #ededed 5%, #bab1ba 100%);
+	background-color:#ededed;
+	border-radius:15px;
+	border:1px solid #d6bcd6;
+	display:inline-block;
+	cursor:pointer;
+	color:#c90909;
+	font-family:Arial;
+	font-size:17px;
+	padding:7px 25px;
+	text-decoration:none;
+    text-shadow:0px 1px 0px #e1e2ed;
+    font-weight: bold;
+    margin-left: 8px;
+}
+.login-button:hover {
+	background:linear-gradient(to bottom, #f88d2a 5%, #794204 100%);
+	background-color:#b9bab1;
+}
+.login-button:active {
+	position:relative;
+	top:1px;
+}
+
+//Modal register button
+
+.modal-register-button {
+	box-shadow: 3px 4px 0px 0px #899599;
+	background:linear-gradient(to bottom, #ededed 5%, #bab1ba 100%);
+	background-color:#ededed;
+	border-radius:15px;
+	border:1px solid #d6bcd6;
+	display:inline-block;
+	cursor:pointer;
+	color:#000000;
+	font-family:Arial;
+	font-size:17px;
+	padding:7px 25px;
+	text-decoration:none;
+    text-shadow:0px 1px 0px #e1e2ed;
+    font-weight: bold;
+}
+.modal-register-button:hover {
+	background:linear-gradient(to bottom, #f88d2a 5%, #794204 100%);
+	background-color:#b9bab1;
+}
+.modal-register-button:active {
+	position:relative;
+	top:1px;
+}
+
+
+//Profile-save-button
+
+.profile-save-button {
+	box-shadow: 3px 4px 0px 0px #899599;
+	background:linear-gradient(to bottom, #ededed 5%, #bab1ba 100%);
+	background-color:#ededed;
+	border-radius:15px;
+	border:1px solid #d6bcd6;
+	display:inline-block;
+	cursor:pointer;
+	color:#000000;
+	font-family:Arial;
+	font-size:17px;
+	padding:7px 25px;
+	text-decoration:none;
+    text-shadow:0px 1px 0px #e1e2ed;
+    font-weight: bold;
+}
+.profile-save-button:hover {
+	background:linear-gradient(to bottom, #f88d2a 5%, #794204 100%);
+	background-color:#b9bab1;
+}
+.profile-save-button:active {
+	position:relative;
+	top:1px;
+}
+
+//Price button in Action House
+
+.price-button {
+	box-shadow: 3px 4px 0px 0px #899599;
+	background:linear-gradient(to bottom, #ededed 5%, #bab1ba 100%);
+	background-color:#ededed;
+	border-radius:15px;
+	border:1px solid #d6bcd6;
+	display:inline-block;
+	cursor:pointer;
+	color:#000000;
+	font-family:Arial;
+	font-size:17px;
+	padding:7px 25px;
+	text-decoration:none;
+    text-shadow:0px 1px 0px #e1e2ed;
+    font-weight: bold;
+}
+.price-button:hover {
+	background:linear-gradient(to bottom, #06f3d3 5%, #035599 100%);
+	background-color:#b9bab1;
+}
+.price-button:active {
+	position:relative;
+	top:1px;
+}

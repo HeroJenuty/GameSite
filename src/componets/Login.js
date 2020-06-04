@@ -12,14 +12,14 @@ const Login = (props) => {
 
   return (
     <div className="d-flex align-items-center ml-2">
-      <Button outline color="light" onClick={toggle} className="btn-sm">{buttonLabel}</Button>
+      <Button  onClick={toggle} className="login-button">{buttonLabel}</Button>
       <Modal isOpen={modal} toggle={toggle} >
         <ModalHeader toggle={toggle}>Login</ModalHeader>
         <ModalBody>
             <LoginForm/>
         </ModalBody>
         <ModalFooter>
-          Ако сте забравили паролата си няма как да си я възстановите :)
+          Currently not posible to change password due to technical alpha!
         </ModalFooter>
       </Modal>
     </div>

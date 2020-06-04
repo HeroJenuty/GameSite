@@ -33,7 +33,7 @@ const RegisterForm = () => {
         <div className="col-md-3">
                 <form>
                 <div className="form-group">
-                    <label htmlFor="first-name">Име</label>
+                    <label htmlFor="first-name">Name</label>
                     <input type="text"
                         className="form-control"
                         value={firstName} 
@@ -42,25 +42,25 @@ const RegisterForm = () => {
                         placeholder="Въведи име"/>
                 </div>
                     <div className="form-group">
-                    <label htmlFor="last-name">Фамилия</label>
+                    <label htmlFor="last-name">Last name</label>
                     <input 
                         type="text"
                         value={lastName}
                         onChange={e => setLastName(e.target.value)}
                         className="form-control" 
                         id="last-name" 
-                        placeholder="Въведи фамиия"/>
+                        placeholder="Enter family name"/>
                 </div>
                 <div className="form-group">
-                    <label htmlFor="register-password">Парола</label>
+                    <label htmlFor="register-password">Password</label>
                     <input 
                         type="password" 
                         className="form-control" 
                         onChange={e => setPassword(e.target.value)}
                         id="register-password" 
-                        placeholder="Въведи парола"/>
+                        placeholder="Enter password"/>
                 </div>
-                <button type="button" className="btn btn-success" onClick={dispatchEditUser}>Запази</button>
+                <button type="button" className="profile-save-button" onClick={dispatchEditUser}>Save info</button>
             </form>
         </div>
 </div>

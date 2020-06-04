@@ -1,5 +1,5 @@
 body {
-    background: url("../images/tenor.gif") no-repeat center center fixed;
+    background: url("../images/link.jpg") no-repeat center center fixed;
     background-size: cover;
 }
 
@@ -31,15 +31,19 @@ body {
     color: white;
 }
 
-.price-button{
-    background-color: rgb(19, 211, 201);
-  border: none;
-  color: white;
-  padding: 1rem;
-  text-align: center;
-  font-size: 16px;
-  margin: 4px 2px;
-  border-radius: 1rem;
-  width: 50%;
-  cursor: pointer;
+.navbar{
+background: linear-gradient(217deg, rgba(224, 54, 54, 0.8), rgba(255,0,0,0) 70.71%),
+            linear-gradient(127deg, rgba(117, 150, 211, 0.8), rgba(0,255,0,0) 70.71%),
+            linear-gradient(336deg, rgba(0,0,255,.8), rgba(0,0,255,0) 70.71%);
+
+}
+
+.nav-link {
+    color: rgb(214, 214, 214) !important;
+    -webkit-text-stroke: 0.1px rgb(39, 46, 46);
+    font-size: large !important;
+    }
+
+.alpha{
+    margin-right: 2rem;
 }

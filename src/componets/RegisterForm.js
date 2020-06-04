@@ -57,7 +57,7 @@ const RegisterForm = () => {
                 id="register-password" 
                 placeholder="Insert your pasword here"/>
         </div>
-        <button type="button" className="btn btn-success mb-2 ml-2" onClick={dispatchAddUser}>Register!</button>
+        <button type="button" className="modal-register-button" onClick={dispatchAddUser}>Register</button>
     </form>
 }
 

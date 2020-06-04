@@ -37,7 +37,7 @@ class HeaderNavbar extends Component {
     }
 
     render() {
-        return <Navbar color="dark" dark expand="md" >
+        return <Navbar className="navbar" dark expand="md" >
             <div className="container">
                 <NavbarToggler onClick={this.toggleIsOpen} />
                 <Collapse isOpen={this.state.isOpen} navbar>
@@ -80,14 +80,14 @@ class HeaderNavbar extends Component {
                             </>
                         ) : (
                                 <>
-                                    <Register buttonLabel="Регистрирай се" />
-                                    <Login buttonLabel="Влез" />
+                                    <Register buttonLabel="Register" />
+                                    <Login buttonLabel="Login" />
                                 </>
                             )}
                     </Nav>
-                    {/* <img src="https://fontmeme.com/permalink/200305/2a4c7ace6f854ee4dc881c094be7db12.png" alt="" /> */}
                 </Collapse>
             </div>
+            <div className="alpha">Technical alpha</div>
         </Navbar>
     };
 }

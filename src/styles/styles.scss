@@ -21,4 +21,10 @@
 
 @import "~font-awesome/scss/font-awesome";
 
-@import "custom.scss"
+
+// Import user created scss from project
+
+@import "custom.scss";
+@import "./components/usermenu.scss";
+@import "./components/buttons.scss";
+@import "./components/register.scss";

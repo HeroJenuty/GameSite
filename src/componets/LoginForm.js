@@ -24,18 +24,18 @@ const RegisterForm = () => {
                 className="form-control"
                 onChange={e => setEmail(e.target.value)}
                 id="login-email"
-                placeholder="Въведи email" />
+                placeholder="Enter email" />
         </div>
         <div className="form-group">
-            <label htmlFor="login-password">Парола</label>
+            <label htmlFor="login-password">Password</label>
             <input
                 type="password"
                 className="form-control"
                 onChange={e => setPassword(e.target.value)}
                 id="login-password"
-                placeholder="Въведи парола" />
+                placeholder="Enter password" />
         </div>
-        <button type="button" className="btn btn-success" onClick={dispatchLogin}>Влез</button>
+        <button type="button" className="login-button" onClick={dispatchLogin}>Enter</button>
     </form>
 }
 
