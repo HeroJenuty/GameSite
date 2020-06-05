@@ -28,7 +28,7 @@ const UserMenu = () => {
                 exact
                 to="gamestore"
                 activeClassName="active"
-            >Game Store</NavLink>
+            >Auction House</NavLink>
         </NavItem>
         <Button type="button" onClick={dispatchLogout} className="logout-button">Logout</Button>
     </>

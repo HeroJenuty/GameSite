@@ -29,10 +29,10 @@ const Game = props => {
         <div className="card">
             <img src={props.game.imageUrl} className="card-img-top" alt={props.game.name} />
             <div className="card-body">
-                <button type="button" className="btn btn-danger mb-1" onClick={dispatchDeleteGame}>Изтрий завинаги</button>
+                <button type="button" className="btn btn-danger mb-1" onClick={dispatchDeleteGame}>Delete</button>
                 <h5 className="card-title">{props.game.name}</h5>
                 <p className="card-text">{props.game.description}</p>
-                <button type="button" className="btn btn-success" onClick={dispatchAddGameToUser}>Добави игра към потребител</button>
+                <button type="button" className="price-button" onClick={dispatchAddGameToUser}>Add game to user</button>
             </div>
         </div>
     </div>
