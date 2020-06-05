@@ -12,7 +12,7 @@ class Home extends React.Component {
                     <img src={Cain} alt=""></img>
                 </div>
                 <div className="col-9 mt-3 mt-md-5 bg-dark text-center d-flex align-items-center text-light">
-                    <h3> Well hello there my friend and welcome! Come, sit by the couch grab a snack and a drink adn game on.
+                    <h3> Well hello there my friend and welcome! Come, sit by the couch grab a snack and a drink and game on.
                         Challenge your friend to a duel of might or perhaps brave through
                         on a adventure together? There is a game everyone here so come now
                         stay a while and play a game in The Arcade Tavern!</h3>

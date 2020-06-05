@@ -58,22 +58,6 @@ class HeaderNavbar extends Component {
                                 activeClassName="active"
                             >Arcade Games</NavLink>
                         </NavItem>
-                        {/* <NavItem>
-                            <NavLink
-                                tag={RRNavLink}
-                                exact
-                                to="gamestore"
-                                activeClassName="active"
-                            >Game Store</NavLink>
-                        </NavItem> */}
-                        {/* <NavItem>
-                        <NavLink
-                            tag={RRNavLink}
-                            exact to="/protected"
-                            activeClassName="active">
-                            Protected
-                        </NavLink>
-                    </NavItem> */}
                         {this.props.token !=='' ? (
                             <>
                             <UserMenu />

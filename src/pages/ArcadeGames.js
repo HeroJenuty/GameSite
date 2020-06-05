@@ -1,6 +1,6 @@
 import React from 'react';
 import Isotope from 'isotope-layout';
-import { Modal, ModalBody, ModalFooter } from 'reactstrap';
+import { Modal, ModalBody, ModalFooter, ModalHeader } from 'reactstrap';
 
 class ArcadeGames extends React.Component {
     constructor(props) {
@@ -170,6 +170,7 @@ class ArcadeGames extends React.Component {
                 size="lg"
                 backdrop={'static'}
                 isOpen={this.state.modal} toggle={this.toggle}>
+                    <ModalHeader>Good luck and have fun!</ModalHeader>
                 <ModalBody>
                     <div className="embed-responsive embed-responsive-4by3">
                         <iframe src={this.state.activeGameUrl}></iframe>
