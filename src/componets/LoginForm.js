@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import { useDispatch } from 'react-redux';
 import { login } from '../redux/actions';
 
-const RegisterForm = () => {
+const LoginForm = () => {
 
     const dispatch = useDispatch();
     const [email, setEmail] = useState('');
@@ -39,4 +39,4 @@ const RegisterForm = () => {
     </form>
 }
 
-export default RegisterForm;
+export default LoginForm;
