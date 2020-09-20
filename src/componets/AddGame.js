@@ -46,7 +46,7 @@ const AddGame = () => {
                 onChange={e => setImageURL(e.target.value)}
                 id="image"
                 placeholder="Please add a Image URL"/>
-            <img src={imageURL} className="d-block img-fluid" alt=""/>
+            <img src={imageURL} className="d-block " alt=""/>
         </div>
         <div className="form-group">
             <label htmlFor="price">Price</label>
