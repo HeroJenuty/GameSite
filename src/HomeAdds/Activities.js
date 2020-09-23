@@ -8,7 +8,7 @@ const Activities = props => {
             <ActivitiesAdds
                 title={"Arcade Games"}
                 description={"Jump in and play classic games from the arcade era!"}
-                image={"https://im7.ezgif.com/tmp/ezgif-7-caa7b792c004.gif"}>
+                image={"https://media0.giphy.com/media/1HUzRHih5D7Menu0T4/giphy.gif"}>
             </ActivitiesAdds>
             <ActivitiesAdds
                 title={"Auction House"}

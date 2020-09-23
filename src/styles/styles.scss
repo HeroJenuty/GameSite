@@ -6,6 +6,23 @@
 // Customize Bootstrap Variables
 @import "./variables";
 
+//Scrolbar
+@mixin scrollbars($size, $foreground-color, $background-color: mix($foreground-color, white,  50%)) {
+    // For Google Chrome
+    &::-webkit-scrollbar {
+      width:  $size;
+      height: $size;
+    }
+  
+    &::-webkit-scrollbar-thumb {
+      background: $foreground-color;
+    }
+  
+    &::-webkit-scrollbar-track {
+      background: $background-color;
+    }
+  
+  }
 
 // Import custom font from Google
 @import url('https://fonts.googleapis.com/css?family=Roboto:400,500,700&display=swap&subset=cyrillic');
@@ -30,3 +47,6 @@
 @import "./components/register.scss";
 @import "./components/homeC.scss";
 @import "./components/activities.scss";
+@import "./components/featured.scss";
+
+

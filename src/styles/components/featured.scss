@@ -1,0 +1,33 @@
+
+.featured-items-container{
+    @include scrollbars(.5em, slategray);
+    overflow-x: auto;
+    padding-bottom: 0.5rem;
+    margin-bottom: 2rem;
+    border-radius: 15px;
+
+    .featured-item{
+        flex: 0 0 100px;
+        flex-direction: column;
+        align-items: center;
+        margin-right: 10px;
+        border-radius: 0.5rem;
+        justify-content:  center;
+        height: auto;
+        width: auto;
+    }
+}
+
+.card{
+  background-color: black;
+  color: white;
+  border-radius: 15px;
+}
+
+.modal-content{
+  
+  .featured-video{
+    width: 760px;
+    height: 515px;
+}
+  }

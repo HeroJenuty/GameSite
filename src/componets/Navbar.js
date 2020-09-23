@@ -71,7 +71,6 @@ class HeaderNavbar extends Component {
                     </Nav>
                 </Collapse>
             </div>
-            <div className="alpha">Technical alpha</div>
         </Navbar>
     };
 }
