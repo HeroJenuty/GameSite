@@ -13,10 +13,10 @@ const Featured = props => {
 
             <div className="featured-item">
                 <div className="card">
-                    <img src="https://live.staticflickr.com/65535/50363677716_a608803a85_z.jpg"></img>
+                    <img src="https://live.staticflickr.com/65535/50379021943_a85bdb8c63_n.jpg"></img>
                     <div className="card-body">
-                        <h5 class="card-title">Title</h5>
-                        <Button onClick={toggle} className="featured-button">Click here</Button>
+                        <h6 class="card-title">Listen to Vergils battle theme from DMC5 Special Edition now!</h6>
+                        <Button onClick={toggle} className="featured-button"><i class="fa fa-headphones"></i></Button>
                         <Modal isOpen={modal} toggle={toggle} >   
                                 <iframe className="featured-video" src="https://www.youtube.com/embed/Jrg9KxGNeJY" 
                                 frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; 
